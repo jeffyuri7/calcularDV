@@ -7,6 +7,9 @@ from gi.repository import Gtk
 builder = Gtk.Builder()
 builder.add_from_file("ui_dig_ver.glade")
 
+MULTIPLICADORES = (8, 6, 4, 2, 3, 5, 9, 7)
+
+
 class Manipulador:
     def on_main_window_destroy(self, window):
         Gtk.main_quit()
@@ -16,7 +19,25 @@ class Manipulador:
         self.calcularDV(codigo)
 
     def calcularDV(self, numero):
-        pass
+        digito = builder.get_object("lbl_digito_ver")
+        try:
+            dv = 0
+            if len(numero) == 8:
+                for i, v in enumerate(numero):
+                    dv = dv + (int(numero[i]) * MULTIPLICADORES[i])
+                dv = dv * 10
+                dv = dv % 11
+                if dv == 0:
+                    digito.set_text('"5"')
+                elif dv == 10:
+                    digito.set_text('"0"')
+                else:
+                    digito.set_text(str(f'"{dv}"'))
+            else:
+                self.mensagem('ERRO', 'O código de rastreamento precisa ter 8 (oito) dígitos numéricos', 'dialog-error')
+                digito.set_text('')
+        except Exception:
+            self.mensagem('ERRO', 'O código de rastreamento precisa ter 8 (oito) dígitos numéricos', 'dialog-error')
 
     def mensagem(self, param, param1, param2):
         pass
