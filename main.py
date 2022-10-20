@@ -22,9 +22,8 @@ Calcular button. The check digit will be shown on the Dígito Verificador label.
 """
 
 import gi
-from gi.repository import Gtk
 gi.require_version('Gtk', '3.0')
-
+from gi.repository import Gtk
 
 builder = Gtk.Builder()
 builder.add_from_file("ui_dig_ver.glade")
