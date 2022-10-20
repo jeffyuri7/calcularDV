@@ -11,6 +11,15 @@ class Manipulador:
     def on_main_window_destroy(self, window):
         Gtk.main_quit()
 
+    def on_button_dig_ver_clicked(self, button):
+        codigo = builder.get_object("entry_codigo").get_text()
+        self.calcularDV(codigo)
+
+    def calcularDV(self, numero):
+        pass
+
+    def mensagem(self, param, param1, param2):
+        pass
 
 builder.connect_signals(Manipulador())
 window = builder.get_object('main_window')
