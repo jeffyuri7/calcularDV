@@ -40,7 +40,13 @@ class Manipulador:
             self.mensagem('ERRO', 'O código de rastreamento precisa ter 8 (oito) dígitos numéricos', 'dialog-error')
 
     def mensagem(self, param, param1, param2):
-        pass
+        message: Gtk.MessageDialog = builder.get_object('mensagem')
+        message.props.text = param
+        message.props.secondary_text = param1
+        message.props.icon_name = param2
+        message.show_all()
+        message.run()
+        message.hide()
 
 builder.connect_signals(Manipulador())
 window = builder.get_object('main_window')
