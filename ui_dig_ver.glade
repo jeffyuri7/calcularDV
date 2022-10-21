@@ -23,7 +23,7 @@
             <property name="margin-end">10</property>
             <property name="margin-top">20</property>
             <property name="margin-bottom">20</property>
-            <property name="pixbuf">static/imagens/logo2.png</property>
+            <property name="pixbuf">./static/imagens/logo2.png</property>
           </object>
           <packing>
             <property name="expand">False</property>
