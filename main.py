@@ -2,14 +2,14 @@
 
 """CalcularDV - A Gtk calculator.
 
-Goal: Calculate the check digit for postal labels
+Summary: Calculate the check digit for postal labels
 
 Language: Python
 
 GUI: GTK
 
-Summary: This software calculate the check digit for postal labels. To do this,
-you must enter the first eight numeric digits of the label, not including
+Information: This software calculate the check digit for postal labels. To do
+this, you must enter the first eight numeric digits of the label, not including
 letters.
 This program calculates only labels that follow the international post pattern,
 for example:
