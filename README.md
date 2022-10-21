@@ -17,6 +17,22 @@ Installation is very easy. Download this project, create a virtual environment a
 
 ## Usage
 
+Run the app. On the home screen enter the eight numeric digits of the postal label.
+
+The international standard for postal labels follows the model:
+
+**AB123456789CD**
+
+The first two letters usually refer to the type of service contracted. These letters should be ignored.
+
+The ninth digit is a check digit. It's obtained through a calculation performed with the first eight digits.
+
+The final two letters usually refer to the country where the package was posted. These two letters are also ignored.
+
+Enter the first eight digits in the input field and click calculate.
+
+The check digit will appear next.
+
 ## Create a .exe for Windows
 
 ## License
