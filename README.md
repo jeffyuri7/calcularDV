@@ -36,3 +36,5 @@ The check digit will appear next.
 ## Create a .exe for Windows
 
 ## License
+
+CalcularDV is licensed under the GNU General Puclic License v3.0. See [LICENSE](https://github.com/jeffyuri7/calcularDV/blob/main/LICENSE) for more details.
