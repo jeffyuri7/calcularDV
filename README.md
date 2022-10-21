@@ -5,6 +5,8 @@
 
 A python software to calculate the digit checker of postal labels.
 
+This is a simple program, which despite being completely usable, does not involve complex programming. I created it because I needed it in my work, but I took the opportunity to apply the development techniques of a complete project.
+
 ## Install
 
 Installation is very easy. Download this project, create a virtual environment and install the dependencies below.
@@ -34,6 +36,12 @@ Enter the first eight digits in the input field and click calculate.
 The check digit will appear next.
 
 ## Create a .exe for Windows
+
+CalcularDV was initially developed to be used on PCs with OS Windows. Therefore, the project includes configuration files listing the DLLs necessary for its operation. These DLLs were listed to create an executable file for Windows.
+
+If you have interested in creating an .exe or .msi file for use on Windows without having to install python separately, read more about cx_Freeze.
+
+You will need to install the cx_Freeze package in your virtual environment to generate the program installation file. For more information visit the link [cx_Freeze](https://cx-freeze.readthedocs.io/en/latest/).
 
 ## License
 
