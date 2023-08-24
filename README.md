@@ -4,7 +4,7 @@
 
 A python software to **calculate the digit checker** of postal labels.
 
-This is a simple program, which despite being completely usable, does not involve complex programming. I developed it to use in the company I work for, but I took the opportunity to apply the development techniques of a complete project.
+I developed this app to use in my company. It is simple, but I took the opportunity to apply the development techniques of a complete project.
 
 ## Install
 
@@ -26,9 +26,9 @@ The international standard for postal labels follows the model:
 
 The first two letters usually refer to the type of service contracted. These letters should be ignored.
 
-The ninth digit is a check digit. It's obtained through a calculation performed with the first eight digits.
+The ninth digit is the check digit. It's obtained through a calculation performed with the first eight digits.
 
-The final two letters usually refer to the country where the package was posted. These two letters are also ignored.
+The final two letters usually refer to the country where the package was sent. These two letters are also ignored.
 
 Enter the first **eight digits** in the input field and click calculate.
 
